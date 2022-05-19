@@ -1,8 +1,9 @@
+import java.text.NumberFormat;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] numbers = { { 1, 2, 3}, { 4, 5, 6} };
-        System.out.println(Arrays.deepToString(numbers));
+        String result = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(result);
     }
 }
